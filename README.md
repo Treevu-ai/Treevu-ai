@@ -39,6 +39,7 @@ Data        → PostgreSQL · Redis · REST APIs
 
 [![Website](https://img.shields.io/badge/cli--market.dev-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://cli-market.dev)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Treevu-ai)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ricardo-antonio-cuba-alvan)
 
 ---
 
