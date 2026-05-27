@@ -31,7 +31,7 @@ Data        → PostgreSQL · Redis · REST APIs
 
 ### 📊 GitHub Stats
 
-![Treevu-ai stats](https://github-readme-stats.vercel.app/api?username=Treevu-ai&show_icons=true&theme=dark&hide_border=true)
+[![Treevu-ai stats](https://github-readme-stats.vercel.app/api?username=Treevu-ai&show_icons=true&theme=dark&hide_border=true&count_private=true&cache_seconds=1800)](https://github.com/Treevu-ai)  [![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Treevu-ai&layout=compact&theme=dark&hide_border=true&cache_seconds=1800)](https://github.com/Treevu-ai)
 
 ---
 
