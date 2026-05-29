@@ -12,8 +12,6 @@ Based in 🇵🇪 Perú — shipping software that matters.
 | Project | Description | Stack |
 |---|---|---|
 | [cli-market-world](https://github.com/Treevu-ai/cli-market-world) | Price intelligence & market connector platform | Python · FastAPI |
-| [Agentic-Friendly](https://github.com/Treevu-ai/Agentic-Friendly) | AI scoring & agentic platform | JavaScript · Next.js |
-| [invisible-hand](https://github.com/Treevu-ai/invisible-hand) | Market automation engine | TypeScript |
 
 ---
 
