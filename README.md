@@ -10,8 +10,9 @@
 
 <br/>
 
+<!-- readme-hero -->
 <a href="https://cli-market.dev">
-  <img src="assets/cli-market-demo.gif" alt="CLI Market demo — market search, compare and checkout in the terminal" width="100%" />
+  <img src="assets/readme-hero.gif" alt="CLI Market demo — market search, compare and checkout in the terminal" width="100%" />
 </a>
 
 <br/>
