@@ -19,7 +19,7 @@
 [![Website](https://img.shields.io/badge/cli--market.dev-00d75f?style=for-the-badge&logo=vercel&logoColor=white)](https://cli-market.dev)
 [![Dashboard](https://img.shields.io/badge/live_moat-111111?style=for-the-badge&logo=chartdotjs&logoColor=00d75f)](https://cli-market-production.up.railway.app/dashboard)
 [![PyPI](https://img.shields.io/pepy/dt/cli-market?label=downloads&color=00d75f&logo=pypi&style=for-the-badge)](https://pypi.org/project/cli-market/)
-[![MCP](https://img.shields.io/badge/MCP_tools-22-00d75f?style=for-the-badge&logo=anthropic)](https://cli-market.dev/tools)
+[![MCP](https://img.shields.io/badge/MCP_tools-22-00d75f?style=for-the-badge&logo=terminal)](https://cli-market.dev/tools)
 [![Pro](https://img.shields.io/badge/Pro-%2439%2Fmo-00d75f?style=for-the-badge)](https://cli-market.dev/#pro-checkout)
 
 ```bash
@@ -116,7 +116,7 @@ Cloud      Railway · Cloudflare · GitHub Actions · Azure
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ricardo_Cuba-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ricardo-antonio-cuba-alvan)
 [![X](https://img.shields.io/badge/@cli__market__dev-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/cli_market_dev)
-[![Email](https://img.shields.io/badge/hello@cli--market.dev-00d75f?style=for-the-badge&logo=maildotru&logoColor=white)](mailto:hello@cli-market.dev)
+[![Email](https://img.shields.io/badge/hello@cli--market.dev-00d75f?style=for-the-badge)](mailto:hello@cli-market.dev)
 
 <sub>Pin suggestion: <code>cli-market-core</code> · <code>procure-copilot</code> · private moat repos · <code>sinapsis-innovadora</code></sub>
 
