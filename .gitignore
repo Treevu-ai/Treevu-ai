@@ -1,0 +1,5 @@
+node_modules/
+.pin-browser-profile/
+profile-debug.png
+profile-debug.txt
+package-lock.json
