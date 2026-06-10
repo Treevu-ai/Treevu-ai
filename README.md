@@ -1,6 +1,6 @@
 <div align="center">
 
-# Ricardo Cuba
+# CLI Market by Ricardo Cuba
 
 ### Founder · [CLI Market](https://cli-market.dev) · [Sinapsis Innovadora](https://github.com/Treevu-ai/sinapsis-innovadora)
 
