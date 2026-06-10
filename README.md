@@ -37,11 +37,11 @@ market compare "leche" --country PE
 
 | Signal | Live today |
 |:---|:---|
-| Shelf prices | **50,000+** verified · refresh ~4h |
+| Shelf prices | **~52,000+** verified · refresh ~4h |
 | Retailers | **38** active · **68** defined |
 | Platforms | VTEX · Shopify · Magento · WooCommerce |
 | Countries | 8 · AR BR CL CO FR IT MX PE |
-| Golden Records | **11,000+** product identities · **92%** linkage |
+| Golden Records | **11,000+** product identities · **97%** linkage |
 | Agent surface | **22** curated MCP tools · REST · CLI |
 
 ---
