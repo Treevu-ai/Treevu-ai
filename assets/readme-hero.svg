@@ -1,0 +1,109 @@
+<svg width="960" height="440" viewBox="0 0 960 440" xmlns="http://www.w3.org/2000/svg" font-family="'SF Mono', 'Cascadia Code', 'Fira Code', Consolas, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#12161c"/>
+      <stop offset="100%" stop-color="#0a0d11"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d75f" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00d75f" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00d75f" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="22" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <clipPath id="panel-clip"><rect x="24" y="24" width="912" height="392" rx="14"/></clipPath>
+  </defs>
+
+  <rect width="960" height="440" fill="#05070a"/>
+
+  <g filter="url(#soft)">
+    <rect x="24" y="24" width="912" height="392" rx="14" fill="url(#bg)" stroke="#22282f" stroke-width="1"/>
+  </g>
+
+  <g clip-path="url(#panel-clip)">
+    <rect x="24" y="24" width="912" height="392" fill="url(#bg)"/>
+    <rect x="24" y="24" width="912" height="1" fill="url(#glow)">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3.2s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- title bar -->
+    <rect x="24" y="24" width="912" height="38" fill="#0f1319"/>
+    <circle cx="48" cy="43" r="6" fill="#ff5f57"/>
+    <circle cx="68" cy="43" r="6" fill="#febc2e"/>
+    <circle cx="88" cy="43" r="6" fill="#28c840"/>
+    <text x="480" y="48" text-anchor="middle" fill="#6b7480" font-size="13">cli-market — zsh</text>
+    <line x1="24" y1="62" x2="936" y2="62" stroke="#1c2129" stroke-width="1"/>
+
+    <!-- body -->
+    <g font-size="15" fill="#d7dde3">
+
+      <!-- line 1: install -->
+      <g>
+        <text x="46" y="98" fill="#00d75f">$</text>
+        <text x="64" y="98">pip install cli-market-core</text>
+        <rect x="46" y="86" width="0" height="18" fill="#05070a">
+          <animate attributeName="width" values="500;500;0" keyTimes="0;0.001;1" dur="0.01s" fill="freeze"/>
+        </rect>
+        <rect x="46" y="86" width="500" height="18" fill="#05070a">
+          <animate attributeName="width" values="500;0" dur="0.9s" begin="0.3s" fill="freeze" calcMode="linear"/>
+        </rect>
+      </g>
+      <text x="46" y="122" fill="#5d6672" font-size="13" opacity="0">
+        Successfully installed cli-market-core-1.12.33
+        <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.99;1" dur="1.3s" begin="0.3s" fill="freeze"/>
+      </text>
+
+      <!-- line 2: search -->
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.99;1" dur="1.9s" begin="1.9s" fill="freeze"/>
+        <text x="46" y="156" fill="#00d75f">$</text>
+        <text x="64" y="156">market search "leche evaporada" --country PE</text>
+      </g>
+      <rect x="46" y="144" width="620" height="18" fill="#05070a">
+        <animate attributeName="width" values="620;0" dur="1.6s" begin="1.9s" fill="freeze" calcMode="linear"/>
+      </rect>
+
+      <g opacity="0" font-size="13">
+        <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.99;1" dur="0.4s" begin="3.6s" fill="freeze"/>
+        <text x="64" y="182" fill="#8b93a0">STORE      PRICE   Δ vs cheapest</text>
+        <text x="64" y="202" fill="#00d75f">tottus_pe  S/4.00  —</text>
+        <text x="64" y="222" fill="#5d6672">vega_pe    S/21.90  +447%</text>
+        <text x="64" y="242" fill="#5d6672">tottus_pe  S/22.50  +463%  (6-pack)</text>
+      </g>
+
+      <!-- line 3: optimize -->
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.99;1" dur="1.9s" begin="4.4s" fill="freeze"/>
+        <text x="46" y="278" fill="#00d75f">$</text>
+        <text x="64" y="278">market optimize "canasta familiar" --country PE</text>
+      </g>
+      <rect x="46" y="266" width="660" height="18" fill="#05070a">
+        <animate attributeName="width" values="660;0" dur="1.6s" begin="4.4s" fill="freeze" calcMode="linear"/>
+      </rect>
+
+      <g opacity="0" font-size="13">
+        <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.99;1" dur="0.4s" begin="6.1s" fill="freeze"/>
+        <text x="64" y="304" fill="#8b93a0">16 items → split across 6 retailers</text>
+        <text x="64" y="326" fill="#d7dde3">best combo   </text>
+        <text x="184" y="326" fill="#00d75f" font-weight="600">S/352.64</text>
+        <text x="64" y="346" fill="#5d6672">single store  S/422.78+  (missing 7 items)</text>
+      </g>
+
+      <!-- final agent line -->
+      <g opacity="0">
+        <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.99;1" dur="0.6s" begin="6.9s" fill="freeze"/>
+        <text x="46" y="384" fill="#00d75f">→</text>
+        <text x="70" y="384" fill="#8b93a0" font-style="italic">agent checks out at 6 stores. done in one call.</text>
+      </g>
+
+      <!-- cursor -->
+      <rect x="46" y="372" width="9" height="18" fill="#00d75f" opacity="0">
+        <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.99;1" dur="0.1s" begin="7.5s" fill="freeze"/>
+        <animate attributeName="opacity" values="1;1;0;0" dur="1s" begin="7.6s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <rect x="24" y="24" width="912" height="392" rx="14" fill="none" stroke="#262c34" stroke-width="1"/>
+</svg>

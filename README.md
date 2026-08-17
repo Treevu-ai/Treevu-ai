@@ -1,48 +1,52 @@
 <div align="center">
 
-# CLI Market by Ricardo Cuba
+<img src="assets/wordmark.svg" alt="Treevu" width="72" />
+
+# Ricardo Cuba
 
 ### Founder · [CLI Market](https://cli-market.dev) · [Sinapsis Innovadora](https://github.com/Treevu-ai/sinapsis-innovadora)
 
-**Commerce infrastructure for AI agents** — one API, CLI & MCP to search, compare and buy across LATAM retail.
+**Commerce infrastructure for AI agents** — one API, CLI & MCP to search, compare and buy across LatAm retail.
 
-🇵🇪 Perú · turning shelf prices into agent decisions
+🇵🇪 Lima, Perú · turning shelf prices into agent decisions, live in 20+ countries
 
 <br/>
 
 <!-- readme-hero -->
 <a href="https://cli-market.dev">
-  <img src="assets/readme-hero.gif" alt="CLI Market demo — market search, compare and checkout in the terminal" width="100%" />
+  <img src="assets/readme-hero.svg" alt="CLI Market demo — search, compare and optimize a basket across 6 retailers in one call" width="100%" />
 </a>
 
-<br/>
+<br/><br/>
 
 [![Website](https://img.shields.io/badge/cli--market.dev-00d75f?style=for-the-badge&logo=vercel&logoColor=white)](https://cli-market.dev)
-[![Dashboard](https://img.shields.io/badge/live_moat-111111?style=for-the-badge&logo=chartdotjs&logoColor=00d75f)](https://cli-market-production.up.railway.app/dashboard)
 [![PyPI](https://img.shields.io/pepy/dt/cli-market?label=downloads&color=00d75f&logo=pypi&style=for-the-badge)](https://pypi.org/project/cli-market/)
-[![MCP](https://img.shields.io/badge/MCP_tools-22-00d75f?style=for-the-badge&logo=terminal)](https://cli-market.dev/tools)
+[![Core](https://img.shields.io/badge/cli--market--core-PyPI-00d75f?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/cli-market-core/)
+[![MCP](https://img.shields.io/badge/MCP_tools-68-00d75f?style=for-the-badge&logo=terminal&logoColor=white)](https://cli-market.dev/tools)
 [![Pro](https://img.shields.io/badge/Pro-%2439%2Fmo-00d75f?style=for-the-badge)](https://cli-market.dev/#pro-checkout)
 
 ```bash
 pip install cli-market
 market search "arroz" --country PE --json
-market compare "leche" --country PE
+market optimize "leche(2) arroz(1) aceite(1)" --country PE
 ```
 
 </div>
 
 ---
 
-## What I'm building
+## What's live right now
+
+*Pulled straight from the moat, not a slide deck.*
 
 | Signal | Live today |
 |:---|:---|
-| Shelf prices | **~52,000+** verified · refresh ~4h |
-| Retailers | **38** active · **68** defined |
-| Platforms | VTEX · Shopify · Magento · WooCommerce |
-| Countries | 8 · AR BR CL CO FR IT MX PE |
-| Golden Records | **11,000+** product identities · **97%** linkage |
-| Agent surface | **22** curated MCP tools · REST · CLI |
+| Shelf prices tracked | **180,000+** snapshots · refresh every ~4h |
+| Retailers | **320+** indexed · VTEX · Shopify · WooCommerce · Magento · Bsale |
+| Countries | **20+** — 🇵🇪🇦🇷🇧🇷🇨🇱🇨🇴🇲🇽🇪🇨🇬🇹🇺🇾🇨🇷🇵🇦🇧🇴🇵🇾 + 🇪🇸🇮🇹🇫🇷🇩🇪🇳🇱🇬🇧🇺🇸 |
+| Product identities | **150,000+** resolved · golden-record cross-store linkage |
+| Agent surface | **68** MCP tools · REST API · CLI |
+| Basket optimizer | 1 call → best split across retailers, TCO, substitutes, checkout links |
 
 ---
 
@@ -52,30 +56,30 @@ Open where we **win adoption & B2B demos**. Private where the **data moat** live
 
 | Layer | Repo | | Who it's for |
 |:---|:---|:---:|:---|
-| **SDK / funnel** | [cli-market-core](https://github.com/Treevu-ai/cli-market-core) | 🌐 | Devs & agents — `pip install` → register → search |
-| **B2B showcase** | [procure-copilot](https://github.com/Treevu-ai/procure-copilot) | 🌐 | Procurement teams on CLI Market data |
-| **Product moat** | cli-market-world | 🔒 | API, landing, MCP registry, ops |
-| **Data moat** | cli-market-backend | 🔒 | Collector, connectors, billing |
+| **Product / API / ops** | [cli-market-world](https://github.com/Treevu-ai/cli-market-world) | 🌐 | The canonical monorepo — API, MCP registry, collector, landing |
+| **B2B showcase** | [sinapsis-innovadora](https://github.com/Treevu-ai/sinapsis-innovadora) | 🌐 | Agentic transformation studio & client work |
+| **Intelligence layer** | cli-market-core | 🔒 → [PyPI](https://pypi.org/project/cli-market-core/) | Source private, package public — `pip install` still works |
+| **Procurement control plane** | procure-copilot | 🔒 | Approval workflows & checkout for LatAm procurement teams |
 | **Semantic moat** | cli-market-index | 🔒 | Golden Record entity resolution |
 | **GTM ops** | cli-market-content | 🔒 | Calendar, drafts, campaign gates |
 
 ```mermaid
 flowchart LR
-  subgraph public["🌐 Public — adoption"]
+  subgraph public["🌐 Public"]
+    WORLD[cli-market-world]
+    SIN[sinapsis-innovadora]
+  end
+  subgraph private["🔒 Private source, public artifacts"]
     CORE[cli-market-core]
+    IDX[cli-market-index]
     PROC[procure-copilot]
   end
-  subgraph private["🔒 Private — moat"]
-    WORLD[cli-market-world]
-    BACK[cli-market-backend]
-    IDX[cli-market-index]
-  end
-  CORE -->|API| WORLD
-  BACK -->|prices| WORLD
+  CORE -->|"PyPI package"| WORLD
   IDX -->|Golden Records| WORLD
-  PROC -->|powered by| WORLD
-  DEV[Agent builder] --> CORE
+  WORLD -->|"powers"| PROC
+  DEV[Agent builder] -->|"pip install"| CORE
   B2B[Enterprise buyer] --> PROC
+  WORLD -->|MCP · REST · CLI| AGENTS[AI agents]
 ```
 
 > Private repos: request access via [cli-market.dev](https://cli-market.dev) · Pro **$39/mo** for alerts, full MCP & checkout.
@@ -85,11 +89,11 @@ flowchart LR
 ## Stack
 
 ```text
-Agents     MCP · tool calling · RAG · agentic workflows
+Agents     MCP · tool calling · agentic workflows · RAG
 Backend    Python · FastAPI · PostgreSQL
 Frontend   Next.js · React · Tailwind
-Commerce   VTEX APIs · PayPal · Mercado Pago · PyPI
-Cloud      Railway · Cloudflare · GitHub Actions · Azure
+Commerce   VTEX · Shopify · WooCommerce APIs · PayPal · Mercado Pago
+Cloud      Fly.io · Cloudflare · GitHub Actions
 ```
 
 <details>
@@ -101,6 +105,7 @@ Cloud      Railway · Cloudflare · GitHub Actions · Azure
 |:---|:---|
 | [sinapsis-innovadora](https://github.com/Treevu-ai/sinapsis-innovadora) | Agentic digital transformation studio |
 | [treevu-ai-repo-landing](https://github.com/Treevu-ai/treevu-ai-repo-landing) | Company landing & product catalog |
+| [invisible-hand](https://github.com/Treevu-ai/invisible-hand) | Market automation engine — signal-driven microservices |
 
 </details>
 
@@ -119,7 +124,7 @@ Cloud      Railway · Cloudflare · GitHub Actions · Azure
 [![X](https://img.shields.io/badge/@cli__market__dev-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/cli_market_dev)
 [![Email](https://img.shields.io/badge/hello@cli--market.dev-00d75f?style=for-the-badge)](mailto:hello@cli-market.dev)
 
-<sub>Pin suggestion: <code>cli-market-core</code> · <code>procure-copilot</code> · private moat repos · <code>sinapsis-innovadora</code></sub>
+<sub>Pin suggestion: <code>cli-market-world</code> · <code>sinapsis-innovadora</code> · private moat repos on request</sub>
 
 <br/><br/>
 
